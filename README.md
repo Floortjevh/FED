@@ -38,12 +38,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   https://www.de.nl 
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  dames home  
+  #### Screenshot(s) van de eerste pagina (small screen):   
   <img src="readme-images/" width="375px" alt="">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  nieuw collectie
   <img src="readme-images/" width="375px" alt="">
  
 </details>
