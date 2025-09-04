@@ -55,7 +55,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <img src="readme-images/checklist1.heic" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist2.heic" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist3.heic" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist4.heic" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist5.heic" width="375px" alt="foto checklist">
 
+  Uit de screenreader test kwamen de volgende bevindingen:
+  <img src="readme-images/screenreaderkopniveau.png" width="375px" alt="foto van de screenreader die de juiste kopniveau voorleest">
+  Hierboven zie je dat de screenreader het juiste kopniveau voorleest en de bijbehorende tekst. 
+  <img src="readme-images/screenreadernaamafbeelding.png" width="375px" alt="foto van de screenreader die een duidelijke naam voor een afbeelding gebruikt">
+  Hierboven zie je dat de screenreader een duidelijk naam voor een afbeelding van een koffiecategorie voorleest.
+  <img src="readme-images/screenreadernaamproduct.png" width="375px" alt="foto van de screenreader die de naam van het product dubbel voorleest">
+  Hierboven zie je dat de screenreader een productnaam voorleest waarin twee keer dezelfde naam staat.
+  <img src="readme-images/screenreaderpijltje1.png" width="375px" alt="foto van de screenreader die het laatste zichtbare product van een schuifbalk markeerd">
+  <img src="readme-images/screenreaderpijltje2.png" width="375px" alt="foto van de screenreader die een knop zonder naam voorleest">
+  Hierboven zie je eerst dat hij het laatst zichtbare product voorleest van een schuifbalk en vervolgens gaat de screenreader naar een knop die zonder naam of aanduiding wordt benoemd. Zo weet je niet dat je hierop moet drukken om meer producten te zien te krijgen. 
 </details>
 
 
