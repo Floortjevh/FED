@@ -39,10 +39,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.de.nl 
 
   #### Screenshot(s) van de eerste pagina (small screen):   
-  <img src="readme-images/" width="375px" alt="">
+  <img src="readme-images/pagina1.png" width="375px" alt="Afbeelding van mijn eerste pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  <img src="readme-images/" width="375px" alt="">
+  <img src="readme-images/pagina2.png" width="375px" alt="Afbeelding van mijn tweede pagina">
  
 </details>
 
