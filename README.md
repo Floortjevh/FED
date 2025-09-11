@@ -100,6 +100,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Wat goed ging was het maken van mijn breakdownschets, maar ik ben nog niet zeker of deze wel klopt. Ik vind het lastig om een start te maken aan mijn code, ondanks dat ik nu een breakdownschets heb, vind ik het moeilijk om hier een HTML en css van te schrijven. Ik ben nu vooral ook de meeste tijd aan de lesopdrachten kwijt, ik hoop deze later mee te kunnen nemen in mijn eigen code. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
