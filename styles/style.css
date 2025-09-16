@@ -2,12 +2,9 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  width: 100%; 
 }
-
-
-
-
 
 
 /*********************/
@@ -15,8 +12,13 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--primary-color: black;
+	--secundary-color: rgb(74, 74, 74);
+	--tertiary-color: white;
+	--primary-color-background: #f7eedc;
+	--secundary-background-color: #b51c1e;
+	--tertiary-background-color: #f1e1c1;
+	--group-background-color: white; 
 }
 
 
@@ -29,3 +31,139 @@
 
 /* jouw code */
 
+
+/* typografie */
+body{
+  font-family: "Roboto Slab", serif, sans-serif;
+  font-style: normal;
+  font-weight: auto;
+  line-height: 1.5;
+  margin: 0em;
+  text-align: left;
+  color: var(--primary-color);
+  background-color: var(--primary-color-background);
+}
+footer{
+	text-align: center;
+	background-color: var(--secundary-background-color);
+	color: var(--tertiary-color);
+}
+h1, h2, h3:not(footer h1, h2, h3){ 
+	color: var(--primary-color);
+}
+h1, h2{
+	font-size: 28px;
+}
+h3{
+	font-size: 20px;
+}
+p{
+	font-size: 18px;
+}
+main p{
+	color: var(--secundary-color);
+}
+a{
+	text-decoration: none;
+}
+a:not(footer a){
+	color: var(--primary-color);
+}
+footer a{
+	color: var(--tertiary-color);
+}
+li{
+	list-style-type: none;
+	margin-left: -1em;
+}
+i{
+	font-size: 14px;
+}
+u{
+	color: var(--secundary-color);
+}
+button{
+	font-size: 19px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+section:nth-of-type(4) h3{
+	font-size: 25px;
+}
+section:nth-of-type(4) p{
+	font-size: 16px;
+}
+section:nth-of-type(4) img + p{
+	font-size: 21px;
+}
+section:last-of-type{
+	background-color: var(--tertiary-background-color);
+}
+section>h2, section>h3, section>p, .marg{
+	margin-left: 1em;
+}
+
+
+
+/* Afbeeldingen */
+img{
+	width: 100%;
+}
+header img{
+	width: 8%;
+}
+header ul img{
+	width: 2%;
+	margin-left: 0.4em;
+}
+footer img{
+	width: 20%;
+}
+footer>img{
+	width: 50%;
+}
+.wereldbol{
+	width: 8%;
+}
+
+
+/* Groepen */
+footer nav ul:last-of-type{
+	display: flex;
+	align-items: center;
+}
+footer nav ul:last-of-type a{
+	margin-left: -4em;
+}
+section:nth-of-type(1){
+	display: grid;
+    grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	background-color: var(--group-background-color);
+	border-radius: 1em;
+}
+section:nth-of-type(1) img{
+	grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+	grid-row-end: -1;
+	border-radius: 1em;
+}
+section:nth-of-type(2) li{
+	display: grid;
+    grid-template-columns: 1fr;
+	grid-template-rows: fit-content 1fr 1fr 1fr 1fr;
+	background-color: var(--group-background-color);
+	border-radius: 1em;
+}
+section:nth-of-type(2) img{
+	grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+	border-radius: 1em;
+}
+section:nth-of-type(2) h2{
+	grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+}
