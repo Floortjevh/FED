@@ -3,7 +3,6 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box; 
-  width: 100%; 
 }
 
 
@@ -20,9 +19,6 @@
 	--tertiary-background-color: #f1e1c1;
 	--group-background-color: white; 
 }
-
-
-
 
 
 /****************/
@@ -74,7 +70,7 @@ footer a{
 }
 li{
 	list-style-type: none;
-	margin-left: -1em;
+	margin-left: -2.4em;
 }
 i{
 	font-size: 14px;
@@ -83,34 +79,47 @@ u{
 	color: var(--secundary-color);
 }
 button{
-	font-size: 19px;
+	font-size: 17px;
 	text-transform: uppercase;
 	font-weight: 600;
 }
-section:nth-of-type(4) h3{
+.diffsize h3{
 	font-size: 25px;
 }
-section:nth-of-type(4) p{
+.diffsize p{
 	font-size: 16px;
 }
-section:nth-of-type(4) img + p{
+.diffsize img + p{
 	font-size: 21px;
 }
 section:last-of-type{
 	background-color: var(--tertiary-background-color);
 }
-section>h2, section>h3, section>p, .marg{
-	margin-left: 1em;
+main>h2{
+	margin: 1em;
+}
+.banner h1, .banner p{
+	color: var(--tertiary-color);
 }
 
 
 
 /* Afbeeldingen */
 img{
-	width: 100%;
+	max-width: 100%;
 }
 header img{
-	width: 8%;
+	width: 18%;
+}
+header>img{
+	display: block;
+	padding: 0.4em;
+	background-color: var(--group-background-color);
+	position: fixed;
+	right: 0.2em;
+    bottom: 0.8em;
+    z-index: 9999;
+	width: 14%;
 }
 header ul img{
 	width: 2%;
@@ -121,49 +130,107 @@ footer img{
 }
 footer>img{
 	width: 50%;
+	margin-top: 1em;
 }
 .wereldbol{
 	width: 8%;
 }
 
+/* Button */
+button{
+	margin-left: 0em;
+	margin-right: 0em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-left: 2.4em;
+	padding-right: 2.4em;
+	padding-top: 0.9em;
+	padding-bottom: 0.9em;
+	background-color: var(--secundary-background-color);
+	border-color: var(--secundary-background-color);
+	border-radius: 0.4em;
+	color: var(--tertiary-color);
+}
 
 /* Groepen */
+section{
+	background-color: var(--group-background-color);
+	border-radius: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	padding: 1em;
+}
+/* 
+section img:not(.banner img){
+	
+}
+*/
+.banner{
+	background-image: url("../images/burendag-20e-editie.png");
+	background-size: 590px;
+	background-position: 72%;
+	margin: 0em;
+	border-radius: 0em;
+	padding-bottom: 18em;
+	padding-top: 2.4em;
+}
+section:last-of-type{
+	margin-left: 0em;
+	margin-right: 0em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+section:last-of-type li{
+	margin-left: -2.4em;
+}
+section:last-of-type button{
+	margin-left: 0.8em;
+}
+
 footer nav ul:last-of-type{
 	display: flex;
 	align-items: center;
 }
 footer nav ul:last-of-type a{
-	margin-left: -4em;
+	margin-left: 3em;
 }
+footer nav ul:last-of-type p{
+	margin-left: 3em;
+}
+
+/* eerst zoveel mogelijk met section en dan bepaalde classes voor dezelfde grid
+
 section:nth-of-type(1){
 	display: grid;
-    grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	background-color: var(--group-background-color);
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 	border-radius: 1em;
 }
 section:nth-of-type(1) img{
-	grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-	grid-row-end: -1;
-	border-radius: 1em;
+	grid-column: 1 / -1;
+    grid-row: 1 / 4;
 }
-section:nth-of-type(2) li{
-	display: grid;
-    grid-template-columns: 1fr;
-	grid-template-rows: fit-content 1fr 1fr 1fr 1fr;
-	background-color: var(--group-background-color);
-	border-radius: 1em;
+section:nth-of-type(1) h1{
+	grid-column: 1 / -1;
+    grid-row: 1 / 2;
+	color: var(--tertiary-color);
+	margin-left: 1em;
 }
-section:nth-of-type(2) img{
-	grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-	border-radius: 1em;
+section:nth-of-type(1) p{
+	grid-column: 1 / -1;
+    grid-row: 2 / 3;
+	color: var(--tertiary-color);
 }
-section:nth-of-type(2) h2{
-	grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 2;
+section:nth-of-type(1) button{
+	grid-column: 1 / -1;
+    grid-row: 4 / 5;
 }
+
+
+/* formulier 
+not empty, want zoekveld wordt iets groter
+/* button 
+onclick gaat hij kleur veranderen.
+focus-visible voor on tab
