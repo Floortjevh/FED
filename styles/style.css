@@ -27,15 +27,16 @@
 
 /* jouw code */
 
-/* typografie */
+
+/* algemeen */
 body{
-  font-family: "Roboto Slab", serif, sans-serif;
-  font-style: normal;
-  line-height: 1.5;
-  margin: 0em;
-  text-align: left;
-  color: var(--primary-color);
-  background-color: var(--primary-color-background);
+    font-family: "Roboto Slab", serif, sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    margin: 0em;
+    text-align: left;
+    color: var(--primary-color);
+    background-color: var(--primary-color-background);
 }
 footer{
 	text-align: center;
@@ -81,7 +82,7 @@ header>nav>ol>li>a{
 	color: var(--secundary-color);
 	font-weight: 300;
 }
-button{
+.red, .white{
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -113,7 +114,8 @@ footer hr{
 }
 
 
-/* Afbeeldingen */
+
+/* afbeeldingen */
 img{
 	max-width: 100%;
 }
@@ -137,8 +139,7 @@ header ul img:not(.wereldbol){
 	right: 1.4em;
 }
 header>nav>button>img{
-	width: 1.2em;
-	margin-top: 0.5em;
+	width: 1.6em;
 }
 header>nav>a>img{
 	margin-left: 10em;
@@ -161,33 +162,48 @@ footer>img{
 }
 
 
-/* Button */
-button:not(header nav button){
+
+/* buttons */
+.red, .white{
 	margin-left: 0em;
 	margin-right: 0em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	padding-left: 5.4em;
-	padding-right: 5.4em;
 	padding-top: 0.9em;
 	padding-bottom: 0.9em;
 	background-color: var(--secundary-background-color);
 	border-color: var(--secundary-background-color);
 	border-radius: 0.4em;
 	color: var(--tertiary-color);
+	text-align: center;
 }
 header nav button{
 	background: none;
 	border: none;
 }
-button.white{
+.white{
+	border: 1.6px solid var(--secundary-background-color);
 	background-color: var(--tertiary-color);
-	border-color: var(--secundary-background-color);
 	color: var(--secundary-background-color)
 } 
+section:first-of-type .red{
+	margin-left: 1.2em;
+	padding-top: 1em;
+	padding-left: 3.7em;
+	padding-right: 3.7em;
+	padding-bottom: 1em;
+	font-size: 17.2px;
+}
+section:last-of-type .red{
+	margin-left: 1.2em;
+	padding-left: 4em;
+	padding-right: 4em;
+}
 
 
-/* Groepen */
+
+
+/* groepen */
 section:not(.nosectionstyling, .banner){
 	background-color: var(--group-background-color);
 	border-radius: 1em;
@@ -198,7 +214,6 @@ section:not(.nosectionstyling, .banner){
 	padding: 1em;
 }
 section.grid{
-	background-color: var(--group-background-color);
 	border-radius: 1em;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -207,13 +222,14 @@ section.grid{
 	padding: 0em;
 }
 section.grid ul{
+	background-color: var(--group-background-color);
 	display: grid;
 	gap: 2em;
 }
 section.grid li{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: max-content 0.4fr 2fr 0.3fr;
+	grid-template-rows: max-content 0.1fr 1fr 0.1fr;
 }
 section.grid li img{
 	grid-column: 1/-1;
@@ -237,7 +253,7 @@ section.grid li p{
 	margin-left: 1em;
 	margin-right: 1em;
 }
-section.grid li button{
+section.grid li .red, section.grid li .white{
 	margin-left: 0.8em;
 	margin-right: 0.8em;
 }
@@ -256,23 +272,16 @@ section:first-of-type h1{
 section:first-of-type p{
 	margin-left: 1.44em;
 	margin-right: 1.44em;
-}
-section:first-of-type button{
-	margin-left: 1.3em;
-	padding-left: 4.12em;
-	padding-right: 4.12em;
-	padding-top: 0.95em;
-	padding-bottom: 0.95em;
-	margin-top: 0em;
-	font-size: 17px;
+	margin-top: -0.04em;
+	margin-bottom: 1.8em;
 }
 .banner{
 	background-image: url("../images/burendag-20e-editie.png");
-	background-size: 620px;
+	background-size: 590px;
 	background-position: 72%;
 	margin: 0em;
 	border-radius: 0em;
-	padding-bottom: 17em;
+	padding-bottom: 18em;
 	padding-top: 0.08em;
 }
 section.diffsize{
@@ -282,7 +291,8 @@ section.diffsize{
 }
 .centreer{
 	text-align: center;
-	margin-bottom: -2.6em;
+	margin-bottom: -6em;
+	margin-top: 5em;
 }
 section.nobackground{
 	background-color: var(--primary-color-background);
@@ -290,16 +300,16 @@ section.nobackground{
 section.nobackground h3{
 	font-size: 26px;
 	margin-left: 1em;
+	margin-bottom: 2em;
 }
-section.nobackground button{
+section.nobackground a{
 	margin-left: 1.5em;
-	margin-bottom: 4em;
 	padding-left: 5.4em;
 	padding-right: 5.4em;
 }
 section.nobackground img{
 	margin-bottom: -1em;
-	margin-top: 2em;
+	margin-top: 6em;
 }
 section:last-of-type{
 	background-color: var(--tertiary-background-color);
@@ -310,9 +320,6 @@ section:last-of-type{
 }
 section:last-of-type li{
 	margin-left: -2.4em;
-}
-section:last-of-type button{
-	margin-left: 0.8em;
 }
 footer nav ul:last-of-type{
 	display: flex;
@@ -337,15 +344,16 @@ nav ul:last-of-type a{
 	padding-bottom: 0.07em;
 	padding-top: 0.07em;
 	margin-bottom: 0.4em;
-	padding-right: 0em;
 }
 .diffsize li li p, .scrol li li p{
 	font-size: 14px;
+	text-align: center;
 	margin-left: 0.8em;
 }
 
 
-/* Hamburgermenu */
+
+/* hamburgermenu */
 header{
 	display: flex;
     justify-content: space-between;
@@ -358,15 +366,15 @@ header nav{
 }
 header nav button{
 	position: absolute;
-	top: 1em;
-    right: 1em;
+	top: 2em;
+    right: 1.4em;
 	z-index: 100;
 }
 header nav.toonMenu button img {
-  content: url("../images/kruisje.svg");
-  position: fixed;
-  top: 1em;
-  right: 1em;
+    content: url("../images/kruisje.svg");
+    position: fixed;
+    top: 2em;
+    right: 1.4em;
 }
 header nav ul{
 	position: fixed;
@@ -407,7 +415,9 @@ header hr{
 	color: rgb(183, 183, 183);
 }
 
-/* Formulier*/
+
+
+/* formulier */
 textarea{
 	width: 24em;
 	margin-left: -2.8em;
@@ -421,7 +431,9 @@ textarea:focus{
 	box-shadow: 1px 3px 6px rgb(132, 132, 132);
 }
 
-/* Verplicht veld */
+
+
+/* verplicht veld */
 .ster{
 	color: #b51c1e;
 	font-weight: 450;
@@ -433,13 +445,17 @@ section:last-of-type li{
 	align-items: center;
 }
 
-/*checkbox*/
+
+
+/* checkbox */
 section:last-of-type a{
 	display: flex;
 	align-items: baseline;
 }
 
-/* Flexbox scrollen */
+
+
+/* carousel */
 .scrol{
     display: flex;
     overflow: scroll;
@@ -457,32 +473,32 @@ section:last-of-type a{
 	margin-left: 1em;
 }
 .scrol li{
-    flex-basis: 100%;
+	flex-basis: 100%;
     flex-shrink: 0;
     scroll-snap-align: center;
 }
 .scrol::-webkit-scrollbar-button(*){
-  width: 3em;
-  aspect-ratio: 1;
-  margin: 1em 0 0;
-  padding: 1em;
-  background-color: red;
-  border: none;
-  border-radius: 1em;
-  cursor: pointer;
-  font-size: 1em;
-  position: absolute;
+    width: 3em;
+    aspect-ratio: 1;
+    margin: 1em 0 0;
+    padding: 1em;
+    background-color: red;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 1em;
+    position: absolute;
 }
 .scrol::-webkit-scrollbar-button(:right){
-  content: '→' / 'Next';
-  right: clamp(1.5rem, 5vw, 2rem);
+    content: '→' / 'Next';
+    right: clamp(1.5rem, 5vw, 2rem);
 }
 .scrol::-webkit-scrollbar-button(:left){
-  content: '←' / 'Previous';
-  left: clamp(1.5rem, 5vw, 2rem);
+    content: '←' / 'Previous';
+    left: clamp(1.5rem, 5vw, 2rem);
 }
 .scrol::-webkit-scrollbar-button(*):disabled{
-  opacity:.5;
+    opacity:.5;
 }
 
 
