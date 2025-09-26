@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box; 
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -17,9 +19,10 @@
 	--primary-color-background: #f7eedc;
 	--secundary-background-color: #b51c1e;
 	--tertiary-background-color: #f1e1c1;
-	--group-background-color: white; 
+	--group-background-color: white;
 }
-html{
+
+html {
 	font-size: 16px;
 }
 
@@ -32,148 +35,192 @@ html{
 
 
 /* algemeen */
-body{
-    font-family: "Roboto Slab", serif, sans-serif;
-    font-style: normal;
-    line-height: 1.5;
-    margin: 0em;
-    text-align: left;
-    color: var(--primary-color);
-    background-color: var(--primary-color-background);
+body {
+	font-family: "Roboto Slab", serif, sans-serif;
+	font-style: normal;
+	line-height: 1.5;
+	margin: 0em;
+	text-align: left;
+	color: var(--primary-color);
+	background-color: var(--primary-color-background);
 }
-footer{
+
+footer {
 	text-align: center;
 	background-color: var(--secundary-background-color);
 	color: var(--tertiary-color);
 	padding-bottom: 1.5em;
 }
-h1, h2, h3:not(footer h1, h2, h3){ 
+
+h1,
+h2,
+h3:not(footer h1, h2, h3) {
 	color: var(--primary-color);
 }
-h1{
+
+h1 {
 	font-size: clamp(2rem, 2.828vw, 2.4rem);
 }
-h2{
+
+h2 {
 	font-size: clamp(1.875rem, 2.703vw, 2.275rem);
 }
-h3{
+
+h3 {
 	font-size: clamp(1.25rem, 1.875vw, 1.65rem);
 }
-p{
+
+p {
 	font-size: clamp(1.125rem, 1.7vw, 1.525rem);
 }
-main p{
+
+main p {
 	color: var(--secundary-color);
 }
-a{
+
+a {
 	text-decoration: none;
 }
-a:not(footer a){
+
+a:not(footer a) {
 	color: var(--primary-color);
 }
-footer a{
+
+footer a {
 	color: var(--tertiary-color);
 }
-li{
+
+li {
 	list-style-type: none;
 	margin-left: -2.4em;
 }
-i{
+
+i {
 	font-size: clamp(0.875rem, 1.3vw, 1.275rem);
 }
-u{
+
+u {
 	color: var(--secundary-color);
 }
-header>nav>ol>li>a{
+
+header>nav>ol>li>a {
 	color: var(--secundary-color);
 	font-weight: 300;
 }
-.red, .white{
+
+.red,
+.white {
 	font-size: clamp(1rem, 1.5vw, 1.4rem);
 	text-transform: uppercase;
 	font-weight: 600;
 }
-.diffsize h3, .scrol h3{
+
+.diffsize h3,
+.scrol h3 {
 	font-size: clamp(1.5625rem, 2.34vw, 1.9625rem);
 }
-.diffsize p, .scrol p{
+
+.diffsize p,
+.scrol p {
 	font-size: clamp(1rem, 1.5vw, 1.4rem);
 }
-.diffsize img + p, .scrol img + p{
+
+.diffsize img+p,
+.scrol img+p {
 	font-size: clamp(1.3125rem, 1.97vw, 1.7125rem);
 }
-main>h2{
+
+main>h2 {
 	margin: 1em;
 }
-.banner h1, .banner p{
+
+.banner h1,
+.banner p {
 	color: var(--tertiary-color);
 }
-footer>ul>li>a, footer>a, footer>p{
+
+footer>ul>li>a,
+footer>a,
+footer>p {
 	font-size: clamp(0.875rem, 1.31vw, 1.275rem);
 }
-footer>a{
+
+footer>a {
 	background-color: #468254;
 }
-footer hr{
+
+footer hr {
 	color: rgb(183, 183, 183);
 	border-width: 0.001em;
 }
-section:nth-of-type(3) h2{
+
+section:nth-of-type(3) h2 {
 	font-size: clamp(1.6875rem, 2.516vw, 2.0875rem);
 }
 
 
 
 /* afbeeldingen */
-img{
+img {
 	max-width: 100%;
 }
-header>img{
+
+header>img {
 	display: block;
 	padding: 0.6em;
 	background-color: var(--group-background-color);
 	position: fixed;
 	right: 0.2em;
-    bottom: 0.8em;
-    z-index: 9999;
+	bottom: 0.8em;
+	z-index: 9999;
 	width: 3.7em;
 }
-ol img{
+
+ol img {
 	width: 0.36em;
 	margin-right: 0.4em;
 }
-header ul img:not(.wereldbol){
+
+header ul img:not(.wereldbol) {
 	width: 0.6em;
 	position: absolute;
 	right: 1.4em;
 }
-header>nav>a>img{
+
+header>nav>a>img {
 	margin-top: 0.5em;
 	margin-left: 10em;
 	width: 3.5em;
 }
-header>nav>button>img{
+
+header>nav>button>img {
 	width: 1.6em;
 }
-footer img{
+
+footer img {
 	width: 3em;
 }
-footer>img{
+
+footer>img {
 	width: 10em;
 	margin-top: 2em;
 }
-.wereldbol{
+
+.wereldbol {
 	width: 1.6em;
 	margin-right: 0.4em;
 }
-.diffsize li>img, .scrol li>img{
+
+.diffsize li>img,
+.scrol li>img {
 	width: 1.4em;
 }
 
 
 
 /* buttons */
-.red, .white{
+.red,
+.white {
 	margin-left: 0em;
 	margin-right: 0em;
 	margin-top: 1em;
@@ -186,18 +233,21 @@ footer>img{
 	color: var(--tertiary-color);
 	text-align: center;
 }
-header nav button{
+
+header nav button {
 	background: none;
 	border: none;
 }
-.white{
+
+.white {
 	background-color: var(--tertiary-color);
 	color: var(--secundary-background-color);
 	border-style: solid;
-	border-color: var(--secundary-background-color); 
+	border-color: var(--secundary-background-color);
 	border-width: clamp(0.14rem, 0.45vw, 0.26rem);
-} 
-section:first-of-type .red{
+}
+
+section:first-of-type .red {
 	margin-left: 1.2em;
 	margin-right: 1.2em;
 	padding-top: 1em;
@@ -206,37 +256,38 @@ section:first-of-type .red{
 	padding-bottom: 1em;
 	font-size: clamp(1.075rem, 1.61vw, 1.475rem);
 }
-section:last-of-type .red{
+
+section:last-of-type .red {
 	margin-left: 1.2em;
 	margin-right: 1.2em;
 	padding-left: 4em;
 	padding-right: 4em;
 }
-button:focus-visible{
-	box-shadow: 
-	clamp(0.05rem, 0.3vw, 0.1rem)   
-    clamp(0.1rem, 0.7vw, 0.3rem)  
-    clamp(0.15rem, 1vw, 0.5rem)   
-    rgb(132, 132, 132);
-	background-color: #6c1012; 
+
+button:focus-visible {
+	box-shadow:
+		clamp(0.05rem, 0.3vw, 0.1rem) clamp(0.1rem, 0.7vw, 0.3rem) clamp(0.15rem, 1vw, 0.5rem) rgb(132, 132, 132);
+	background-color: #6c1012;
 }
 
 
 
 
 /* groepen */
-section:not(.nosectionstyling, .banner){
+section:not(.nosectionstyling, .banner) {
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-top: 5em;
 	margin-bottom: 5em;
 	padding: 1em;
 }
-section:not(.nosectionstyling, .banner, .grid){
+
+section:not(.nosectionstyling, .banner, .grid) {
 	border-radius: 1em;
 	background-color: var(--group-background-color);
 }
-section.grid{
+
+section.grid {
 	border-radius: 1em;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -244,92 +295,109 @@ section.grid{
 	margin-bottom: 5em;
 	padding: 0em;
 }
-section.grid ul{
+
+section.grid ul {
 	display: grid;
 	gap: 2em;
 }
-section.grid li{
+
+section.grid li {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: max-content 0.1fr 1fr 0.1fr;
 	background-color: var(--group-background-color);
 	border-radius: 1em;
 }
-section.grid li img{
+
+section.grid li img {
 	grid-column: 1/-1;
 	grid-row: 1/2;
 }
-section.grid li h2{
+
+section.grid li h2 {
 	grid-column: 1/-1;
 	grid-row: 2/3;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
-section.grid li h3{
+
+section.grid li h3 {
 	grid-column: 1/-1;
 	grid-row: 2/3;
 	margin-left: 1em;
 	margin-right: 1em;
 }
-section.grid li p{
+
+section.grid li p {
 	grid-column: 1/-1;
 	grid-row: 3/4;
 	margin-left: 1em;
 	margin-right: 1em;
 }
-section.grid li .red, section.grid li .white{
+
+section.grid li .red,
+section.grid li .white {
 	margin-left: 0.8em;
 	margin-right: 0.8em;
 }
-ol{
+
+ol {
 	margin-bottom: 0.3em;
 	margin-left: 1.6em;
 	margin-top: 0.2em;
 	font-size: clamp(0.875rem, 1.31vw, 1.275rem);
 }
-section:first-of-type h1{
+
+section:first-of-type h1 {
 	margin-left: 0.9em;
 	margin-top: 1.5em;
 	margin-bottom: 0.8em;
 }
-section:first-of-type p{
+
+section:first-of-type p {
 	margin-left: 1.44em;
 	margin-right: 1.44em;
 	margin-top: -0.04em;
 	margin-bottom: 1.8em;
 }
-.banner{
+
+.banner {
 	background-image: url("../images/burendag-20e-editie.png");
-	background-size: cover;           
-    background-position: center 72%;   
-    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 72%;
+	background-repeat: no-repeat;
 	margin: 0em;
 	border-radius: 0em;
 	padding-bottom: 18em;
 	padding-top: 0.08em;
 	display: grid;
 }
-section.diffsize{
+
+section.diffsize {
 	margin-left: 0em;
 	margin-right: 0em;
 	padding: 2em;
 	padding-top: 0em;
 	padding-bottom: 6em;
 }
-.centreer{
+
+.centreer {
 	text-align: center;
 	margin-bottom: -6em;
 	margin-top: 5em;
 }
-section.nobackground{
+
+section.nobackground {
 	background-color: var(--primary-color-background);
 }
-section.nobackground h3{
+
+section.nobackground h3 {
 	font-size: clamp(1.625rem, 2.44vw, 2.025rem);
 	margin-left: 1.1em;
 	margin-bottom: 2em;
 }
-section.nobackground a.red{
+
+section.nobackground a.red {
 	margin-left: 1.5em;
 	margin-right: 1.5em;
 	padding-left: 5.4em;
@@ -338,11 +406,13 @@ section.nobackground a.red{
 	align-items: center;
 	justify-content: center;
 }
-section.nobackground img{
+
+section.nobackground img {
 	margin-bottom: -1em;
 	margin-top: 6em;
 }
-section:last-of-type{
+
+section:last-of-type {
 	display: grid;
 	background-color: var(--tertiary-background-color);
 	margin-left: 0em;
@@ -350,29 +420,37 @@ section:last-of-type{
 	margin-top: 5em;
 	margin-bottom: 5em;
 }
-section:last-of-type li{
+
+section:last-of-type li {
 	margin-left: -2.4em;
 }
-footer nav ul:last-of-type{
+
+footer nav ul:last-of-type {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-footer nav ul:last-of-type a{
+
+footer nav ul:last-of-type a {
 	margin-left: 3em;
 }
-nav ul:last-of-type a{
+
+nav ul:last-of-type a {
 	display: flex;
 	align-items: center;
 }
-.diffsize li ul, .scrol li ul{
+
+.diffsize li ul,
+.scrol li ul {
 	width: fit-content;
 	height: fit-content;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2.7em;
 }
-.diffsize li li, .scrol li li{
+
+.diffsize li li,
+.scrol li li {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
@@ -385,12 +463,15 @@ nav ul:last-of-type a{
 	padding-top: 0.001em;
 	margin-bottom: -2.06em;
 }
-.diffsize li li p, .scrol li li p{
+
+.diffsize li li p,
+.scrol li li p {
 	font-size: clamp(0.875rem, 1.31vw, 1.275rem);
 	text-align: left;
 	margin-left: 0.6em;
 }
-.diffsize a>img{
+
+.diffsize a>img {
 	margin-top: 5em;
 	margin-bottom: -1em;
 }
@@ -399,62 +480,72 @@ nav ul:last-of-type a{
 
 
 /* hamburgermenu */
-header{
+header {
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
-	position: sticky;
-    top: 0;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
 	background-color: var(--group-background-color);
 }
-header nav{
+
+header nav {
 	order: -1;
 }
-header nav button{
+
+header nav button {
 	position: absolute;
 	top: 2em;
-    right: 1.4em;
+	right: 1.4em;
 	z-index: 100;
 }
+
 header nav.toonMenu button img {
-    content: url("../images/kruisje.svg");
-    position: fixed;
-    top: 2em;
-    right: 1.4em;
-}
-header nav ul{
+	content: url("../images/kruisje.svg");
 	position: fixed;
-    left: 0em;
-    right: 0em;
-    top: -1em;
-    bottom: -1em;
-	translate: -100% 0%;
-    transition: translate .3s;
+	top: 2em;
+	right: 1.4em;
 }
-header nav ul li{
+
+header nav ul {
+	position: fixed;
+	left: 0em;
+	right: 0em;
+	top: -1em;
+	bottom: -1em;
+	translate: -100% 0%;
+	transition: translate .3s;
+}
+
+header nav ul li {
 	margin-left: -0.8em;
 	margin-top: 1em;
 	font-weight: 700;
 }
-header nav ul li:first-of-type{
+
+header nav ul li:first-of-type {
 	margin-top: 5em;
 }
-header nav ul li:nth-of-type(9){
+
+header nav ul li:nth-of-type(9) {
 	margin-top: 1.6em;
 	margin-bottom: -0.5em;
 	font-weight: 400;
 }
-header nav ul li:last-of-type{
+
+header nav ul li:last-of-type {
 	font-weight: 400;
 	font-size: clamp(0.9375rem, 1.41vw, 1.3375rem);
 }
-header nav.toonMenu ul{
-    translate: 0% 0%;
+
+header nav.toonMenu ul {
+	translate: 0% 0%;
 }
-header nav.toonMenu ul{
+
+header nav.toonMenu ul {
 	background-color: var(--primary-color-background);
 }
-header hr{
+
+header hr {
 	margin-top: 14em;
 	margin-left: -0.8em;
 	margin-right: 1em;
@@ -462,40 +553,80 @@ header hr{
 }
 
 @media (min-width:38em) {
-	header nav{
-		order: 0;  
+	header nav {
+		order: 0;
+		width: 100%;
 	}
-	header nav button{
+
+	header nav button {
 		display: none;
 	}
-	header nav ul{
-    position: static;
-    translate: unset;
-    padding: 0;
-    background: none;
-    }
-	header nav li{
-    flex-basis: unset;
-    flex-grow: unset;
-    }
-	header nav a{
-    flex-direction: column; 
-    border: none;
-    }
-	header>a:last-of-type{
-    flex-direction: column;
-    }
+
+	header nav ul li:first-of-type {
+		margin-top: 1em;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: static;
+		translate: unset;
+		margin: 2em;
+		padding: 0;
+		background: none;
+	}
+
+	header nav ul li {
+		flex-basis: unset;
+		flex-grow: unset;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		font-weight: 400;
+	}
+
+	header nav a {
+		flex-direction: column;
+		border: none;
+	}
+
+	header>a:last-of-type {
+		flex-direction: column;
+	}
+
+	header nav ul li:nth-of-type(7) {
+		background-color: var(--secundary-background-color);
+		border-radius: 0.4em;
+		padding: 0.6em;
+		margin-left: 0.7em;
+	}
+
+	header nav ul li:nth-of-type(7) a {
+		color: var(--tertiary-color);
+		font-weight: 600;
+	}
+
+	header hr,
+	header li:last-of-type,
+	header li:nth-of-type(9),
+	header li img,
+	header>nav>a>img {
+		display: none;
+	}
 }
+
 @media (min-width:54em) {
-  header>a:last-of-type, nav a{
-    flex-direction: row;
-  }
+
+	header>a:last-of-type,
+	nav a {
+		flex-direction: row;
+	}
 }
 
 
 
 /* formulier */
-textarea{
+textarea {
 	width: 100%;
 	margin-left: 0.2em;
 	margin-right: 1.2em;
@@ -504,28 +635,27 @@ textarea{
 	padding: 0.8em;
 	outline-style: none;
 	border-style: solid;
-	border-color: var(--secundary-color); 
+	border-color: var(--secundary-color);
 	border-width: clamp(0.08rem, 0.3vw, 0.18rem);
 }
-textarea:focus-visible{
-	box-shadow: 
-    clamp(0.05rem, 0.3vw, 0.1rem)   
-    clamp(0.1rem, 0.7vw, 0.3rem)   
-    clamp(0.15rem, 1vw, 0.5rem)    
-    rgb(132, 132, 132);
+
+textarea:focus-visible {
+	box-shadow:
+		clamp(0.05rem, 0.3vw, 0.1rem) clamp(0.1rem, 0.7vw, 0.3rem) clamp(0.15rem, 1vw, 0.5rem) rgb(132, 132, 132);
 
 }
 
 
 
 /* verplicht veld */
-.ster{
+.ster {
 	color: #b51c1e;
 	font-weight: 450;
 	font-size: clamp(0.9375rem, 1.41vw, 1.3375rem);
 	margin-left: 0.5em;
 }
-section:last-of-type li{
+
+section:last-of-type li {
 	display: flex;
 	align-items: center;
 }
@@ -533,7 +663,7 @@ section:last-of-type li{
 
 
 /* checkbox */
-section:last-of-type a{
+section:last-of-type a {
 	display: flex;
 	align-items: baseline;
 }
@@ -541,48 +671,67 @@ section:last-of-type a{
 
 
 /* carousel */
-.scrol{
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    overscroll-behavior-x: contain;
-    gap: 5.5em;
-    scrollbar-width: thin;
-    scrollbar-color: red transparent; 
+.scrol {
+	display: flex;
+	overflow: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	overscroll-behavior-x: contain;
+	gap: 5.5em;
+	scrollbar-width: thin;
+	scrollbar-color: red transparent;
 	margin: 1em;
 	padding: 0em;
 	border-radius: 1em;
 }
-.scrol>li{
+
+.scrol>li {
 	margin-left: 1em;
 	padding-bottom: 3em;
 }
-.scrol>li{
+
+.scrol>li {
 	flex-basis: 100%;
-    flex-shrink: 0;
-    scroll-snap-align: center;
+	flex-shrink: 0;
+	scroll-snap-align: center;
 }
-.scrol::-webkit-scrollbar-button(*){
-    width: 3em;
-    aspect-ratio: 1;
-    margin: 1em 0 0;
-    padding: 1em;
-    background-color: red;
-    border: none;
-    border-radius: 1em;
-    cursor: pointer;
-    font-size: 1em;
-    position: absolute;
+
+.scrol::-webkit-scrollbar-button(*) {
+	width: 3em;
+	aspect-ratio: 1;
+	margin: 1em 0 0;
+	padding: 1em;
+	background-color: red;
+	border: none;
+	border-radius: 1em;
+	cursor: pointer;
+	font-size: 1em;
+	position: absolute;
 }
-.scrol::-webkit-scrollbar-button(:right){
-    content: '→' / 'Next';
-    right: clamp(1.5rem, 5vw, 2rem);
+
+.scrol::-webkit-scrollbar-button(:right) {
+	content: '→' / 'Next';
+	right: clamp(1.5rem, 5vw, 2rem);
 }
-.scrol::-webkit-scrollbar-button(:left){
-    content: '←' / 'Previous';
-    left: clamp(1.5rem, 5vw, 2rem);
+
+.scrol::-webkit-scrollbar-button(:left) {
+	content: '←' / 'Previous';
+	left: clamp(1.5rem, 5vw, 2rem);
 }
-.scrol::-webkit-scrollbar-button(*):disabled{
-    opacity:.5;
+
+.scrol::-webkit-scrollbar-button(*):disabled {
+	opacity: .5;
+}
+
+
+
+/* hele site ander formaat */
+
+@media (min-width:38em) {
+	section.diffsize ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }
