@@ -55,21 +55,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  <img src="readme-images/checklist1.heic" width="375px" alt="foto checklist">
-  <img src="readme-images/checklist2.heic" width="375px" alt="foto checklist">
-  <img src="readme-images/checklist3.heic" width="375px" alt="foto checklist">
-  <img src="readme-images/checklist4.heic" width="375px" alt="foto checklist">
-  <img src="readme-images/checklist5.heic" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist1 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist2 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist3 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist4 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/checklist5 normaal.jpeg" width="375px" alt="foto checklist">
 
   Uit de screenreader test kwamen de volgende bevindingen:
-  <img src="readme-images/screenreaderkopniveau.png" width="375px" alt="foto van de screenreader die de juiste kopniveau voorleest">
+  <img src="readme-images/screenreaderkopniveau normaal.jpeg" width="375px" alt="foto van de screenreader die de juiste kopniveau voorleest">
   Hierboven zie je dat de screenreader het juiste kopniveau voorleest en de bijbehorende tekst. 
-  <img src="readme-images/screenreadernaamafbeelding.png" width="375px" alt="foto van de screenreader die een duidelijke naam voor een afbeelding gebruikt">
+  <img src="readme-images/screenreadernaamafbeelding normaal.jpeg" width="375px" alt="foto van de screenreader die een duidelijke naam voor een afbeelding gebruikt">
   Hierboven zie je dat de screenreader een duidelijk naam voor een afbeelding van een koffiecategorie voorleest.
-  <img src="readme-images/screenreadernaamproduct.png" width="375px" alt="foto van de screenreader die de naam van het product dubbel voorleest">
+  <img src="readme-images/screenreadernaamproduct normaal.jpeg" width="375px" alt="foto van de screenreader die de naam van het product dubbel voorleest">
   Hierboven zie je dat de screenreader een productnaam voorleest waarin twee keer dezelfde naam staat.
-  <img src="readme-images/screenreaderpijltje1.png" width="375px" alt="foto van de screenreader die het laatste zichtbare product van een schuifbalk markeerd">
-  <img src="readme-images/screenreaderpijltje2.png" width="375px" alt="foto van de screenreader die een knop zonder naam voorleest">
+  <img src="readme-images/screenreaderpijltje1 normaal.jpeg" width="375px" alt="foto van de screenreader die het laatste zichtbare product van een schuifbalk markeerd">
+  <img src="readme-images/screenreaderpijltje2 normaal.jpeg" width="375px" alt="foto van de screenreader die een knop zonder naam voorleest">
   Hierboven zie je eerst dat hij het laatst zichtbare product voorleest van een schuifbalk en vervolgens gaat de screenreader naar een knop die zonder naam of aanduiding wordt benoemd. Zo weet je niet dat je hierop moet drukken om meer producten te zien te krijgen. 
 </details>
 
@@ -84,7 +84,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdownschets.pdf" width="375px" alt="breakdown van de twee hele pagina's en een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -166,6 +165,22 @@ Wat goed ging was het maken van mijn breakdownschets, maar ik ben nog niet zeker
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <img src="readme-images/eigenchecklist1 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/eigenchecklist2 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/eigenchecklist3 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/eigenchecklist4 normaal.jpeg" width="375px" alt="foto checklist">
+  <img src="readme-images/eigenchecklist5 normaal.jpeg" width="375px" alt="foto checklist">
+
+
+  Wat er uit de screentest kwam:
+  <img src="readme-images/eigenscreentest1 normaal.jpeg" width="375px" alt="foto van de screenreader die de aangeeft dat je je in een lijst bevindt">
+  De screenreader die de aangeeft dat je je in een lijst bevindt.
+  <img src="readme-images/eigenscreentest2 normaal.jpeg" width="375px" alt="foto van de screenreader die de juiste afbeeldingstitel voorleest">
+  De screenreader die de juiste afbeeldingstitel voorleest.
+  <img src="readme-images/eigenscreentest3 normaal.jpeg" width="375px" alt="foto van de screenreader die je verteld dat je je op een button bevindt">
+  De screenreader die je verteld dat je je op een button bevindt.
+  <img src="readme-images/eigenscreentest4 normaal.jpeg" width="375px" alt="foto van de screenreader die je je de juiste kopniveau voorleest">
+  De screenreader die je je de juiste kopniveau voorleest.
 
 </details>
 

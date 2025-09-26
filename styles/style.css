@@ -19,6 +19,9 @@
 	--tertiary-background-color: #f1e1c1;
 	--group-background-color: white; 
 }
+html{
+	font-size: 16px;
+}
 
 
 /****************/
@@ -47,14 +50,17 @@ footer{
 h1, h2, h3:not(footer h1, h2, h3){ 
 	color: var(--primary-color);
 }
-h1, h2{
-	font-size: 28px;
+h1{
+	font-size: clamp(2rem, 2.828vw, 2.4rem);
+}
+h2{
+	font-size: clamp(1.875rem, 2.703vw, 2.275rem);
 }
 h3{
-	font-size: 20px;
+	font-size: clamp(1.25rem, 1.875vw, 1.65rem);
 }
 p{
-	font-size: 18px;
+	font-size: clamp(1.125rem, 1.7vw, 1.525rem);
 }
 main p{
 	color: var(--secundary-color);
@@ -73,7 +79,7 @@ li{
 	margin-left: -2.4em;
 }
 i{
-	font-size: 14px;
+	font-size: clamp(0.875rem, 1.3vw, 1.275rem);
 }
 u{
 	color: var(--secundary-color);
@@ -83,18 +89,18 @@ header>nav>ol>li>a{
 	font-weight: 300;
 }
 .red, .white{
-	font-size: 16px;
+	font-size: clamp(1rem, 1.5vw, 1.4rem);
 	text-transform: uppercase;
 	font-weight: 600;
 }
 .diffsize h3, .scrol h3{
-	font-size: 25px;
+	font-size: clamp(1.5625rem, 2.34vw, 1.9625rem);
 }
 .diffsize p, .scrol p{
-	font-size: 16px;
+	font-size: clamp(1rem, 1.5vw, 1.4rem);
 }
-.diffsize img + p, .scrol img +p{
-	font-size: 21px;
+.diffsize img + p, .scrol img + p{
+	font-size: clamp(1.3125rem, 1.97vw, 1.7125rem);
 }
 main>h2{
 	margin: 1em;
@@ -103,7 +109,7 @@ main>h2{
 	color: var(--tertiary-color);
 }
 footer>ul>li>a, footer>a, footer>p{
-	font-size: 14px;
+	font-size: clamp(0.875rem, 1.31vw, 1.275rem);
 }
 footer>a{
 	background-color: #468254;
@@ -111,6 +117,9 @@ footer>a{
 footer hr{
 	color: rgb(183, 183, 183);
 	border-width: 0.001em;
+}
+section:nth-of-type(3) h2{
+	font-size: clamp(1.6875rem, 2.516vw, 2.0875rem);
 }
 
 
@@ -138,13 +147,13 @@ header ul img:not(.wereldbol){
 	position: absolute;
 	right: 1.4em;
 }
+header>nav>a>img{
+	margin-top: 0.5em;
+	margin-left: 10em;
+	width: 3.5em;
+}
 header>nav>button>img{
 	width: 1.6em;
-}
-header>nav>a>img{
-	margin-left: 10em;
-	margin-top: 0.5em;
-	width: 3.5em;
 }
 footer img{
 	width: 3em;
@@ -182,22 +191,34 @@ header nav button{
 	border: none;
 }
 .white{
-	border: 1.6px solid var(--secundary-background-color);
 	background-color: var(--tertiary-color);
-	color: var(--secundary-background-color)
+	color: var(--secundary-background-color);
+	border-style: solid;
+	border-color: var(--secundary-background-color); 
+	border-width: clamp(0.14rem, 0.45vw, 0.26rem);
 } 
 section:first-of-type .red{
 	margin-left: 1.2em;
+	margin-right: 1.2em;
 	padding-top: 1em;
 	padding-left: 3.7em;
 	padding-right: 3.7em;
 	padding-bottom: 1em;
-	font-size: 17.2px;
+	font-size: clamp(1.075rem, 1.61vw, 1.475rem);
 }
 section:last-of-type .red{
 	margin-left: 1.2em;
+	margin-right: 1.2em;
 	padding-left: 4em;
 	padding-right: 4em;
+}
+button:focus-visible{
+	box-shadow: 
+	clamp(0.05rem, 0.3vw, 0.1rem)   
+    clamp(0.1rem, 0.7vw, 0.3rem)  
+    clamp(0.15rem, 1vw, 0.5rem)   
+    rgb(132, 132, 132);
+	background-color: #6c1012; 
 }
 
 
@@ -205,13 +226,15 @@ section:last-of-type .red{
 
 /* groepen */
 section:not(.nosectionstyling, .banner){
-	background-color: var(--group-background-color);
-	border-radius: 1em;
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-top: 5em;
 	margin-bottom: 5em;
 	padding: 1em;
+}
+section:not(.nosectionstyling, .banner, .grid){
+	border-radius: 1em;
+	background-color: var(--group-background-color);
 }
 section.grid{
 	border-radius: 1em;
@@ -222,7 +245,6 @@ section.grid{
 	padding: 0em;
 }
 section.grid ul{
-	background-color: var(--group-background-color);
 	display: grid;
 	gap: 2em;
 }
@@ -230,6 +252,8 @@ section.grid li{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: max-content 0.1fr 1fr 0.1fr;
+	background-color: var(--group-background-color);
+	border-radius: 1em;
 }
 section.grid li img{
 	grid-column: 1/-1;
@@ -261,13 +285,12 @@ ol{
 	margin-bottom: 0.3em;
 	margin-left: 1.6em;
 	margin-top: 0.2em;
-	font-size: 14px;
+	font-size: clamp(0.875rem, 1.31vw, 1.275rem);
 }
 section:first-of-type h1{
-	margin-left: 1em;
+	margin-left: 0.9em;
 	margin-top: 1.5em;
 	margin-bottom: 0.8em;
-	font-size: 32px;
 }
 section:first-of-type p{
 	margin-left: 1.44em;
@@ -277,17 +300,21 @@ section:first-of-type p{
 }
 .banner{
 	background-image: url("../images/burendag-20e-editie.png");
-	background-size: 590px;
-	background-position: 72%;
+	background-size: cover;           
+    background-position: center 72%;   
+    background-repeat: no-repeat;
 	margin: 0em;
 	border-radius: 0em;
 	padding-bottom: 18em;
 	padding-top: 0.08em;
+	display: grid;
 }
 section.diffsize{
 	margin-left: 0em;
 	margin-right: 0em;
 	padding: 2em;
+	padding-top: 0em;
+	padding-bottom: 6em;
 }
 .centreer{
 	text-align: center;
@@ -298,20 +325,25 @@ section.nobackground{
 	background-color: var(--primary-color-background);
 }
 section.nobackground h3{
-	font-size: 26px;
-	margin-left: 1em;
+	font-size: clamp(1.625rem, 2.44vw, 2.025rem);
+	margin-left: 1.1em;
 	margin-bottom: 2em;
 }
-section.nobackground a{
+section.nobackground a.red{
 	margin-left: 1.5em;
+	margin-right: 1.5em;
 	padding-left: 5.4em;
 	padding-right: 5.4em;
+	display: grid;
+	align-items: center;
+	justify-content: center;
 }
 section.nobackground img{
 	margin-bottom: -1em;
 	margin-top: 6em;
 }
 section:last-of-type{
+	display: grid;
 	background-color: var(--tertiary-background-color);
 	margin-left: 0em;
 	margin-right: 0em;
@@ -324,32 +356,45 @@ section:last-of-type li{
 footer nav ul:last-of-type{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 footer nav ul:last-of-type a{
-	margin-left: 3em;
-}
-footer nav ul:last-of-type p{
 	margin-left: 3em;
 }
 nav ul:last-of-type a{
 	display: flex;
 	align-items: center;
 }
+.diffsize li ul, .scrol li ul{
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.7em;
+}
 .diffsize li li, .scrol li li{
 	display: flex;
+	flex-wrap: nowrap;
 	align-items: center;
+	justify-content: left;
 	border-radius: 2em;
 	background-color: var(--primary-color-background);
-	padding-left: 0.5em;
-	padding-bottom: 0.07em;
-	padding-top: 0.07em;
-	margin-bottom: 0.4em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	padding-bottom: 0.001em;
+	padding-top: 0.001em;
+	margin-bottom: -2.06em;
 }
 .diffsize li li p, .scrol li li p{
-	font-size: 14px;
-	text-align: center;
-	margin-left: 0.8em;
+	font-size: clamp(0.875rem, 1.31vw, 1.275rem);
+	text-align: left;
+	margin-left: 0.6em;
 }
+.diffsize a>img{
+	margin-top: 5em;
+	margin-bottom: -1em;
+}
+
 
 
 
@@ -358,6 +403,7 @@ header{
 	display: flex;
     justify-content: space-between;
     align-items: center;
+	position: sticky;
     top: 0;
 	background-color: var(--group-background-color);
 }
@@ -393,14 +439,14 @@ header nav ul li{
 header nav ul li:first-of-type{
 	margin-top: 5em;
 }
-header nav ul li:nth-of-type(8){
+header nav ul li:nth-of-type(9){
 	margin-top: 1.6em;
 	margin-bottom: -0.5em;
 	font-weight: 400;
 }
 header nav ul li:last-of-type{
 	font-weight: 400;
-	font-size: 15px;
+	font-size: clamp(0.9375rem, 1.41vw, 1.3375rem);
 }
 header nav.toonMenu ul{
     translate: 0% 0%;
@@ -415,20 +461,59 @@ header hr{
 	color: rgb(183, 183, 183);
 }
 
+@media (min-width:38em) {
+	header nav{
+		order: 0;  
+	}
+	header nav button{
+		display: none;
+	}
+	header nav ul{
+    position: static;
+    translate: unset;
+    padding: 0;
+    background: none;
+    }
+	header nav li{
+    flex-basis: unset;
+    flex-grow: unset;
+    }
+	header nav a{
+    flex-direction: column; 
+    border: none;
+    }
+	header>a:last-of-type{
+    flex-direction: column;
+    }
+}
+@media (min-width:54em) {
+  header>a:last-of-type, nav a{
+    flex-direction: row;
+  }
+}
+
 
 
 /* formulier */
 textarea{
-	width: 24em;
-	margin-left: -2.8em;
+	width: 100%;
+	margin-left: 0.2em;
+	margin-right: 1.2em;
 	margin-top: -1em;
 	border-radius: 0.6em;
 	padding: 0.8em;
 	outline-style: none;
-	border: 1px solid;
+	border-style: solid;
+	border-color: var(--secundary-color); 
+	border-width: clamp(0.08rem, 0.3vw, 0.18rem);
 }
-textarea:focus{
-	box-shadow: 1px 3px 6px rgb(132, 132, 132);
+textarea:focus-visible{
+	box-shadow: 
+    clamp(0.05rem, 0.3vw, 0.1rem)   
+    clamp(0.1rem, 0.7vw, 0.3rem)   
+    clamp(0.15rem, 1vw, 0.5rem)    
+    rgb(132, 132, 132);
+
 }
 
 
@@ -437,7 +522,7 @@ textarea:focus{
 .ster{
 	color: #b51c1e;
 	font-weight: 450;
-	font-size: 15px;
+	font-size: clamp(0.9375rem, 1.41vw, 1.3375rem);
 	margin-left: 0.5em;
 }
 section:last-of-type li{
@@ -471,8 +556,9 @@ section:last-of-type a{
 }
 .scrol>li{
 	margin-left: 1em;
+	padding-bottom: 3em;
 }
-.scrol li{
+.scrol>li{
 	flex-basis: 100%;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -500,45 +586,3 @@ section:last-of-type a{
 .scrol::-webkit-scrollbar-button(*):disabled{
     opacity:.5;
 }
-
-
-
-
-/*
-@media (min-width:38em) {
-	header nav{
-		order: 0;  
-	}
-	header nav button{
-		display: none;
-	}
-	header nav ul{
-    position: static;
-    translate: unset;
-    padding: 0;
-    background: none;
-    }
-	header nav li{
-    flex-basis: unset;
-    flex-grow: unset;
-    }
-	header nav a{
-    flex-direction: column; 
-    border: none;
-    }
-	header>a:last-of-type{
-    flex-direction: column;
-    }
-}
-
-@media (min-width:54em) {
-  header>a:last-of-type, nav a{
-    flex-direction: row;
-  }
-}
-
-/* formulier 
-not empty, want zoekveld wordt iets groter
-/* button 
-onclick gaat hij kleur veranderen.
-focus-visible voor on tab
