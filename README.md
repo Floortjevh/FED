@@ -115,10 +115,8 @@ Ik vind het lastig om een start te maken aan mijn code, ondanks dat ik nu een br
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Breakdownschets goedgekeurd
+  - Rest van de tijd aan mijn HTML schrijven gewerkt
 
 </details>
 
@@ -150,10 +148,8 @@ Ik hoop wat hulp te kunnen krijgen bij wat vragen over mijn hamburgermenu en mij
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Carousel opzet kunnen maken
+  - Verdere vragen zijn beantwoord
 
 </details>
 
@@ -215,10 +211,10 @@ Wat ik lastig vind is het bedenken op welke manier ik mijn site responsive ga ma
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Veel feedback en vragen kunnen stellen nog
+  - Responsive weten te maken van mijn hamburgermenu
+  - Te weten gekomen dat voorkeur gaat naar flexbox voor het maken van responsive
+  - Voor mijn site ervoor gekozen om zo veel mogelijk flexbox te gebruiken, maar vond één selectie mooier eruit zien aan de hand van grid
 
 </details>
 
@@ -238,13 +234,31 @@ Wat ik lastig vind is het bedenken op welke manier ik mijn site responsive ga ma
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Wat goed ging:
+  - Mijn doel behalen. De site komt goed overeen en ik heb naast het responsive maken ook een aantal dingen kunnen proberen voor de surface laag.
+  - Het rosponsive maken van mijn site op een mooie manier aan de hand van flexbox en grid, afgewisseld.
+  - Veel nieuwe soorten selectoren geleerd, zo ook veel gebruik gemaakt van :last-of-type etc en geprobeerd pas div te gebruiken als het echt niet anders kon.
+  - Ik heb ook mijn site iets toegankelijker kunnen maken door gebruik te maken van betere alt teksten en een semantisch juiste opbouw, waardoor de pagina met een screenreader ook makkelijk gebruikt kan worden. (zie de afbeeldingen bij toegankelijkheidstest 2)
+  - Daarnaast ben ik overzichtelijk te werk gegaan en heb ik mijn css ook overzichtelijk gehouden doormiddel van categoriën te maken, zodat ik het zelf sneller terug kon vinden. 
+  - Ook ben ik blij dat ik er doormiddel van clamp voor heb kunnen zorgen dat de letters, knoppen en links mee vergroten wanneer je de pagina vergroot.
+
+  <img src="readme-images/teskstschaaleen.png" width="375px" alt="top">
+  <img src="readme-images/teskstschaaltwee.png.png" width="375px" alt="top">
+  Je ziet dat de tekst en de knoppen worden vergroot wanneer je een groter schermformaat gebruikt.
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Wat lastig was/niet is gelukt:
+  - Wat ik uiteindelijk erg lastig vond was de knoppen en de procesbalk onder mijn carousel weer te geven, dit is mij dan ook niet gelukt. Ik dacht eerst hiermee in javascript aan de slag te kunnen, alleen bleek dit beter te gaan via de codepen voorbeeld met css. Hiervoor moest ik chrome gebruiken om daar de buttons te kunnen zien, alleen werkt dit niet goed op mijn laptop en lukte dit dus ook niet meer om dit goed voor de deadline te laten werken.  
+  - Ook heb ik voor mijn kleinere schermformaat veel gebruik kunnen maken van grid. Toen ik dit later responsive ging maken kwam ik er ook achter dat je dit met flexbox mooi kon weergeven. Achteraf gezien had ik dit dus ook voor het kleine formaat kunnen doen. Aan de andere kant heb ik nu wel goed met beide leren werken en zou ik het ook kunnen aanpassen.
+  - Wat ik nog meer lastig vond was het juist meeschalen van de afbeeldingen bij sommige sections. Al zie je dit maar bij 1 afbeelding echt terug, bij de rest ziet het er prima uit. 
+
+  <img src="readme-images/bummer.png" width="375px" alt="bummer">
+  Je ziet alleen dat het er bij de bovenste afbeelding een beetje raar uitziet, de rest schaalt best goed mee.
+
+
 </details>
 
 
