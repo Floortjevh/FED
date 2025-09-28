@@ -1,18 +1,12 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+/*** jouw code ***/
+
 *,
 *::after,
 *::before {
 	box-sizing: border-box;
 }
 
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
-	/* startje */
 	--primary-color: black;
 	--secundary-color: rgb(74, 74, 74);
 	--tertiary-color: white;
@@ -21,20 +15,17 @@
 	--tertiary-background-color: #f1e1c1;
 	--group-background-color: white;
 }
+/* Bron -> https://www.google.com/search?q=hoe+kan+je+meerdere+%3Aroot+var+in+css&client=safari&sca_esv=8fb985a9e177f272&rls=en&ei=91fJaOziFZXfi-gPodCqgAs&ved=0ahUKEwisuoiUpN2PAxWV7wIHHSGoCrAQ4dUDCBA&uact=5&oq=hoe+kan+je+meerdere+%3Aroot+var+in+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiJGhvZSBrYW4gamUgbWVlcmRlcmUgOnJvb3QgdmFyIGluIGNzczIHECEYoAEYCjIHECEYoAEYCjIHECEYoAEYCkjBnAFQAFicmwFwAXgAkAEAmAGCAaABrBOqAQQyMS45uAEDyAEA-AEBmAIfoAKwFagCCsICEBAuGAMYtAIY6gIYjwHYAQHCAhAQABgDGLQCGOoCGI8B2AEBwgILEAAYgAQYsQMYgwHCAggQABiABBixA8ICDhAAGIAEGLEDGIMBGIoFwgIFEAAYgATCAhEQLhiABBixAxjRAxiDARjHAcICChAAGIAEGEMYigXCAgsQLhiABBjHARivAcICCxAuGIAEGLEDGIMBwgIFEC4YgATCAgQQABgDwgILEC4YgAQYsQMY1ALCAgYQABgWGB7CAgUQABjvBcICCBAAGIAEGKIEwgIFECEYnwXCAggQABiiBBiJBcICBBAhGBWYAxjxBbQbkDxeKkkFugYECAEYCpIHBDIyLjmgB9_GAbIHBDIxLjm4B5gVwgcIMC4zLjIxLjfIB7wB&sclient=gws-wiz-serp */
 
 html {
 	font-size: 16px;
 }
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
 
 
-/* algemeen */
+/*** algemeen ***/
+
 body {
 	font-family: "Roboto Slab", serif, sans-serif;
 	font-style: normal;
@@ -161,7 +152,9 @@ section:nth-of-type(3) h2 {
 
 
 
-/* afbeeldingen */
+
+/*** afbeeldingen ***/
+
 img {
 	max-width: 100%;
 }
@@ -219,7 +212,9 @@ footer>img {
 
 
 
-/* buttons */
+
+/*** buttons ***/
+
 .red,
 .white {
 	margin-left: 0em;
@@ -274,7 +269,15 @@ button:focus-visible {
 
 
 
-/* groepen */
+/*** groepen ***/
+
+/* Bron -> https://www.google.com/search?client=safari&rls=en&q=hoe+kan+je+tekst+precies+in+het+midden+uitlijnen+in+flex+boxes+css&ie=UTF-8&oe=UTF-8
+https://www.google.com/search?q=twee+elementen+naast+elkaar+css&client=safari&sca_esv=73afc9bb409a06fd&rls=en&ei=7W3JaPXCL8PQi-gPr4-J-A4&ved=0ahUKEwi17YWNud2PAxVD6AIHHa9HAu8Q4dUDCBA&uact=5&oq=twee+elementen+naast+elkaar+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiH3R3ZWUgZWxlbWVudGVuIG5hYXN0IGVsa2FhciBjc3MyCBAAGLADGO8FMggQABiwAxjvBTILEAAYgAQYsAMYogQyCxAAGLADGKIEGIkFMgsQABiABBiwAxiiBEi2D1AAWABwAXgAkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIHmAMAiAYBkAYFkgcBMaAHALIHALgHAMIHAzItMcgHBA&sclient=gws-wiz-serp
+https://www.google.com/search?q=hoe+krijg+je+onderdelen+in+een+li+item+onder+elkaar+css&client=safari&sca_esv=8fb985a9e177f272&rls=en&ei=VFLJaIT-KLS3i-gPxqLokQo&ved=0ahUKEwiE-JHknt2PAxW02wIHHUYROqIQ4dUDCBA&uact=5&oq=hoe+krijg+je+onderdelen+in+een+li+item+onder+elkaar+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiN2hvZSBrcmlqZyBqZSBvbmRlcmRlbGVuIGluIGVlbiBsaSBpdGVtIG9uZGVyIGVsa2FhciBjc3MyBRAAGO8FMgUQABjvBTIIEAAYogQYiQVIq70BUK4MWMy7AXACeAGQAQCYAdoCoAHHKKoBCDY2LjQuMC4xuAEDyAEA-AEBmAJGoAL4KagCCsICChAAGLADGNYEGEfCAgYQABgWGB7CAggQABgIGA0YHsICBxAhGKABGArCAgUQIRigAcICBRAAGIAEwgIFEC4YgATCAgsQLhiABBjHARivAcICCBAAGIAEGLEDwgIEEAAYA8ICCxAAGIAEGLEDGIMBwgIKEAAYgAQYQxiKBcICDhAuGIAEGLEDGNEDGMcBwgIQEC4YAxi0AhjqAhiPAdgBAcICEBAAGAMYtAIY6gIYjwHYAQHCAg4QABiABBixAxiDARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgILEC4YgAQYsQMYgwHCAgsQLhiABBixAxjUAsICFBAuGIAEGJcFGNwEGN4EGOAE2AECwgIFECEYnwXCAgQQIRgVwgIIEAAYgAQYogSYAwXxBcDfJnnDIfXoiAYBkAYFugYECAEYCroGBggCEAEYFJIHCDY2LjMuMC4xoAfgiwOyBwg2NC4zLjAuMbgH5CnCBwgwLjkuNTcuNMgHywI&sclient=gws-wiz-serp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+https://developer.mozilla.org/en-US/docs/Web/CSS/Properties 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
 section:not(.nosectionstyling, .banner, .leeg) {
 	margin-left: 1em;
 	margin-right: 1em;
@@ -309,11 +312,17 @@ section.grid li {
 	background-color: var(--group-background-color);
 	border-radius: 1em;
 }
+/* Bron -> https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Box_alignment_in_grid_layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Relationship_of_grid_layout_with_other_layout_methods */
 
 section.grid li img {
 	grid-column: 1/-1;
 	grid-row: 1/2;
 }
+/* Bron -> https://www.google.com/search?q=hoe+krijg+je+met+grid+een+img+op+de+achtergrond+met+start+en+end&client=safari&sca_esv=81be61c3dad309e5&rls=en&ei=b-3LaJL4JqG8i-gPm9eqsAk&ved=0ahUKEwjS6_L9muKPAxUh3gIHHZurCpYQ4dUDCBA&uact=5&oq=hoe+krijg+je+met+grid+een+img+op+de+achtergrond+met+start+en+end&gs_lp=Egxnd3Mtd2l6LXNlcnAiQGhvZSBrcmlqZyBqZSBtZXQgZ3JpZCBlZW4gaW1nIG9wIGRlIGFjaHRlcmdyb25kIG1ldCBzdGFydCBlbiBlbmRIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcA&sclient=gws-wiz-serp 
+https://www.google.com/search?client=safari&rls=en&q=hoe+kan+je+een+image+een+gehele+box+laten+vullen+css&ie=UTF-8&oe=UTF-8 */
 
 section.grid li h2 {
 	grid-column: 1/-1;
@@ -383,6 +392,9 @@ section:first-of-type p {
 	padding-top: 0.08em;
 	display: grid;
 }
+/* Bron -> https://developer.mozilla.org/en-US/docs/Web/CSS/background-position 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Resizing_background_images
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
 
 section.diffsize {
 	margin-left: 0em;
@@ -490,7 +502,11 @@ nav>ul:last-of-type a {
 
 
 
-/* hamburgermenu */
+/*** hamburgermenu ***/
+
+/* Bron -> Codepen
+https://www.google.com/search?client=safari&sca_esv=318dfbf2fb24382c&rls=en&q=hoe+hamburger+menu+van+links+laten+verschijnen+css&spell=1&sa=X&ved=2ahUKEwiPkoTJ2vuPAxVm3AIHHVJkLhkQBSgAegQIDRAB&biw=1440&bih=726&dpr=2 */
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -649,7 +665,12 @@ header hr {
 
 
 
-/* formulier */
+
+/*** formulier ***/
+
+/* Bron -> https://www.google.com/search?client=safari&rls=en&q=tekstveld+formulier+css&ie=UTF-8&oe=UTF-8
+https://www.google.com/search?q=tekstveld+formulier+css+outline+style+schaduw+alleen+als+erop&client=safari&sca_esv=318dfbf2fb24382c&rls=en&ei=W8HOaKjME8Lui-gPi46WsA4&ved=0ahUKEwjo5Y6vzeePAxVC9wIHHQuHBeYQ4dUDCBA&uact=5&oq=tekstveld+formulier+css+outline+style+schaduw+alleen+als+erop&gs_lp=Egxnd3Mtd2l6LXNlcnAiPXRla3N0dmVsZCBmb3JtdWxpZXIgY3NzIG91dGxpbmUgc3R5bGUgc2NoYWR1dyBhbGxlZW4gYWxzIGVyb3BIszVQhQJYmTJwAXgAkAEAmAGSAaAB5QqqAQQxNC4yuAEDyAEA-AEBmAIQoAKVC8ICCxAAGIAEGLADGKIEwgIIEAAYsAMY7wXCAgUQIRigAcICBRAhGJ8FwgIIEAAYgAQYogTCAgUQABjvBZgDAIgGAZAGA5IHBDE0LjKgB4ZMsgcEMTMuMrgHkQvCBwQyLTE2yAdD&sclient=gws-wiz-serp */
+
 textarea {
 	width: 100%;
 	margin-left: 0.2em;
@@ -671,7 +692,12 @@ textarea:focus-visible {
 
 
 
-/* verplicht veld */
+
+/*** verplicht veld ***/
+
+/* Bron -> https://www.google.com/search?q=hoe+een+nog+niet+ingevuld+ster+in+html+toevoegen&client=safari&sca_esv=318dfbf2fb24382c&rls=en&biw=760&bih=726&ei=RcPOaIONLcmli-gP24bgmAg&ved=0ahUKEwjDw_uYz-ePAxXJ0gIHHVsDGIMQ4dUDCBA&uact=5&oq=hoe+een+nog+niet+ingevuld+ster+in+html+toevoegen&gs_lp=Egxnd3Mtd2l6LXNlcnAiMGhvZSBlZW4gbm9nIG5pZXQgaW5nZXZ1bGQgc3RlciBpbiBodG1sIHRvZXZvZWdlbjIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFInkhQAFi2RXAAeACQAQCYAXugAawfqgEENDQuNLgBA8gBAPgBAZgCMKAC_CHCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgUQABiABMICDhAuGIAEGLEDGNEDGMcBwgIKEAAYgAQYQxiKBcICCxAuGIAEGLEDGIMBwgILEC4YgAQYxwEYrwHCAg4QLhiABBixAxjHARivAcICBBAAGAPCAgsQLhiABBixAxjUAsICBRAuGIAEwgIHEAAYgAQYCsICBhAAGBYYHsICCBAAGIAEGKIEwgIFEAAY7wXCAgUQIRifBcICBBAhGBXCAgcQIRigARgKmAMAkgcFMzguMTCgB8OZArIHBTM4LjEwuAf8IcIHCDAuNC40MC40yAfmAQ&sclient=gws-wiz-serp
+https://www.google.com/search?q=css+html+invullijst+met+ster&client=safari&sca_esv=318dfbf2fb24382c&rls=en&biw=760&bih=726&ei=aMXOaNr3GpiD9u8PlPTkoAc&ved=0ahUKEwjay9Od0eePAxWYgf0HHRQ6GXQQ4dUDCBA&uact=5&oq=css+html+invullijst+met+ster&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGNzcyBodG1sIGludnVsbGlqc3QgbWV0IHN0ZXIyBRAhGKABMgUQIRigATIFECEYoAFI3Y4BUMEQWNGAAXABeAGQAQCYAWqgAaUSqgEEMjYuMrgBA8gBAPgBAZgCHaACnRSoAgrCAhAQLhgDGLQCGOoCGI8B2AEBwgIQEAAYAxi0AhjqAhiPAdgBAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAg4QABiABBixAxiDARiKBcICDhAuGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAgUQLhiABMICCxAuGIAEGMcBGK8BwgIFEAAYgATCAggQLhiABBixA8ICCxAAGIAEGLEDGIMBwgINEAAYgAQYsQMYQxiKBcICBhAAGBYYHsICBxAAGIAEGBPCAggQABgTGBYYHsICBRAhGJ8FwgIEECEYFcICBxAhGKABGArCAggQABgIGA0YHsICChAAGAgYChgNGB7CAggQABiiBBiJBcICBRAAGO8FwgIIEAAYgAQYogSYAxTxBcTd9GALDC7VugYECAEYCpIHBDIyLjegB9eWAbIHBDIxLje4B4kUwgcIMC4xLjIwLjjIB7IB&sclient=gws-wiz-serp */
+
 .ster {
 	color: #b51c1e;
 	font-weight: 450;
@@ -686,7 +712,12 @@ section:last-of-type li {
 
 
 
-/* checkbox */
+
+/*** checkbox ***/
+
+/* Bron -> https://www.google.com/search?q=aanvinkhokje+html+opmaak+css&client=safari&sca_esv=318dfbf2fb24382c&rls=en&biw=760&bih=726&ei=08vOaNCsDIrt7_UPhMfssA8&ved=0ahUKEwiQ4v2s1-ePAxWK9rsIHYQjG_YQ4dUDCBA&uact=5&oq=aanvinkhokje+html+opmaak+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGFhbnZpbmtob2tqZSBodG1sIG9wbWFhayBjc3MyChAhGKABGMMEGAoyChAhGKABGMMEGApIsiFQiARYiBtwAXgBkAEAmAFqoAHlBaoBAzkuMbgBA8gBAPgBAZgCC6ACsQbCAgoQABiwAxjWBBhHwgIFEAAY7wXCAggQABiABBiiBJgDAIgGAZAGCJIHBDEwLjGgB70msgcDOS4xuAekBsIHBDItMTHIBzY&sclient=gws-wiz-serp
+https://developer.mozilla.org/en-US/docs/Web/CSS/::checkmark */
+
 section:last-of-type div {
 	display: flex;
 	align-items: baseline;
@@ -698,7 +729,16 @@ section:last-of-type div p {
 
 
 
-/* carousel */
+
+/*** carousel ***/
+
+/* Bron -> Codepen
+https://developer.mozilla.org/en-US/docs/Web/CSS/::scroll-button
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling 
+https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter 
+https://stackoverflow.com/questions/14732448/how-do-i-make-the-scrollbar-on-a-div-only-visible-when-necessary */
+
 .leeg {
 	margin-bottom: 6em;
 	margin-top: 4em;
@@ -759,7 +799,13 @@ section:last-of-type div p {
 }
 
 
-/* hele site ander formaat */
+
+
+/*** hele site ander formaat ***/
+
+/* Bron -> https://www.google.com/search?client=safari&rls=en&q=hoe+maak+je+een+website+responsive+in+html&ie=UTF-8&oe=UTF-8 
+https://www.google.com/search?client=safari&rls=en&q=hoe+afbeelding+naast+column+evengroot+uitlijnen+css&ie=UTF-8&oe=UTF-8 */
+
 @media (min-width:38em) {
 	main>h2:not(h2.centreer) {
 		margin-left: 2.6em;
