@@ -227,10 +227,6 @@ Wat ik lastig vind is het bedenken op welke manier ik mijn site responsive ga ma
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
-
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
@@ -243,7 +239,7 @@ Wat ik lastig vind is het bedenken op welke manier ik mijn site responsive ga ma
   - Ook ben ik blij dat ik er doormiddel van clamp voor heb kunnen zorgen dat de letters, knoppen en links mee vergroten wanneer je de pagina vergroot.
 
   <img src="readme-images/teskstschaaleen.png" width="375px" alt="top">
-  <img src="readme-images/teskstschaaltwee.png.png" width="375px" alt="top">
+  <img src="readme-images/teskstschaaltwee.png" width="375px" alt="top">
   Je ziet dat de tekst en de knoppen worden vergroot wanneer je een groter schermformaat gebruikt.
 
 
