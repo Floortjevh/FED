@@ -687,9 +687,13 @@ section:last-of-type li {
 
 
 /* checkbox */
-section:last-of-type a {
+section:last-of-type div {
 	display: flex;
 	align-items: baseline;
+}
+
+section:last-of-type div p {
+	margin-left: 0.5em;
 }
 
 
